@@ -1,0 +1,68 @@
+name: event_management_system
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For firebase and database integration
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  google_sign_in: ^6.2.2
+  cloud_firestore: ^5.5.0
+  url_launcher: ^6.3.1
+
+  # Cupertino Icons for iOS style icons
+  cupertino_icons: ^1.0.8
+
+  # Intl package for date formatting (downgraded to ^0.19.0)
+  intl: ^0.19.0
+
+  # Provider for state management
+  provider: ^6.1.2
+
+  # HTTP package for network requests (compatible with dart_openai)
+  http: ^0.13.5
+
+  # ChatGPT API for integrating the chatbot (flutter_openai instead of dart_openai)
+  flutter_openai: ^0.5.1
+
+  # Google APIs and Google Auth for OAuth2 and API integration
+  googleapis: ^9.2.0
+  googleapis_auth: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lints to encourage good coding practices
+  flutter_lints: ^5.0.0
+
+  # Flutter Launcher Icons for app logo customization
+  flutter_launcher_icons: ^0.14.2
+
+flutter:
+  uses-material-design: true
+
+  # Custom fonts configuration (Poppins Black 900 as per your earlier information)
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/PoppinsBlack900.ttf  # Fixed font name formatting
+
+  # Image assets
+  assets:
+    - assets/fonts/  
+    - assets/images/app_logo.png
+    - assets/images/google_logo.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo_main.png" # Path to your logo file
