@@ -1,16 +1,49 @@
-# event_management_system
+Here is the app structure of our this EMS App:
+lib
+├── models
+│   ├── event_model.dart
+│   └── user_model.dart
+│
+├── services
+│   ├── auth_service.dart
+│   ├── chat_service.dart
+│   ├── event_service.dart
+│   └── firebase_storage_service.dart
+│
+├── utils
+│   ├── animations.dart
+│   ├── constants.dart
+│   ├── helpers.dart
+│   ├── theme.dart
+│   └── theme_provider.dart
+│
+├── views
+│   ├── admin
+│   │   ├── admin_dashboard_screen.dart
+│   │   ├── event_registration_screen.dart
+│   │   ├── event_schedule_screen.dart
+│   │   └── ticketing_screen.dart
+│   │
+│   ├── auth
+│   │   ├── login_screen.dart
+│   │   └── signup_screen.dart
+│   │
+│   ├── common
+│   │   ├── chat_screen.dart
+│   │   └── settings_screen.dart
+│   │
+│   ├── user
+│   │   ├── user_dashboard_screen.dart
+│   │   ├── user_schedule_screen.dart
+│   │   ├── user_ticketing_screen.dart
+│   │   └── view_events_screen.dart
+│
+├── components
+│   ├── custom_button.dart
+│   ├── custom_text_field.dart
+│   ├── event_card.dart
+│   └── ticket_card.dart
+│
+├── routes.dart
+├── main.dart
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
